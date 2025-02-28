@@ -10,7 +10,7 @@ ShyFox Studio Shared Configuration
 
 </div>
 
-This repository contains shared configuration used for all of the ShyFox Studio repository.
+This repository contains shared configuration used for all of the ShyFox Studio repositories.
 
 This is designed to be installed as a git submodule at the root of any ShyFox Studio repository.  The ShyFox Studio repository needs to be setup so that it conforms to the following project structure:
 
