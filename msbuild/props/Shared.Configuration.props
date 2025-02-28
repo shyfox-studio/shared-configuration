@@ -3,8 +3,7 @@
 
     <!-- Standardize compilation settings -->
     <PropertyGroup>
-        <!-- multi-target 6.0 and 8.0 for now until MonoGame .NET 8 update releases -->
-        <TargetFrameworks>net6.0;net8.0</TargetFrameworks>
+        <TargetFrameworks>net8.0</TargetFrameworks>
         <Features>strict</Features>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <NeutralLanguage>en</NeutralLanguage>
