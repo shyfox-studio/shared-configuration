@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+
+    <!-- Set the project category used by the root Directory.Build.props -->
+    <PropertyGroup>
+        <ProjectCategory>source</ProjectCategory>
+    </PropertyGroup>
+
+    <!-- Common Nuget Package Settings -->
+    <PropertyGroup>
+        <Copyright>Copyright © 2025 ShyFox Studio</Copyright>
+        <Authors>ShyFox Studio and contributors</Authors>
+        <Company>ShyFox Studio</Company>
+        <PackageIcon>nuget-icon.png</PackageIcon>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryBranch>main</RepositoryBranch>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    </PropertyGroup>
+
+</Project>

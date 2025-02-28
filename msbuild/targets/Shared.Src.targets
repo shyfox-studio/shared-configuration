@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+    <ItemGroup>
+        <SharedConfigurationFiles Include="$(MSBuildThisFileDirectory)..\..\.editorconfig" />
+        <SharedConfigurationFiles Include="$(MSBuildThisFileDirectory)..\..\.gitattributes" />
+    </ItemGroup>
+
+    <!-- Copy the config files on src build. -->
+    <Target Name="CopySharedConfigurationFiles" BeforeTargets="Build" Condition="'$(DisableSharedConfigurationCopy)' == ''">
+        <Copy SourceFiles="@(SharedConfigurationFiles)"
+              SkipUnchangedFiles="true"
+              DestinationFolder="$(SolutionDirectory)" />
+    </Target>
+
+</Project>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+
+    <!-- Standardize compilation settings -->
+    <PropertyGroup>
+        <!-- multi-target 6.0 and 8.0 for now until MonoGame .NET 8 update releases -->
+        <TargetFrameworks>net6.0;net8.0</TargetFrameworks>
+        <Features>strict</Features>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <NeutralLanguage>en</NeutralLanguage>
+        <OverwriteReadOnlyFiles>true</OverwriteReadOnlyFiles>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+    </PropertyGroup>
+
+    <!-- Standardize build output locations -->
+    <PropertyGroup>
+        <BaseArtifactsPath>$(SolutionDirectory).artifacts/</BaseArtifactsPath>
+        <BaseArtifactsPathSuffix>$(ProjectCategory)/$(MSBuildProjectName)</BaseArtifactsPathSuffix>
+        <BaseIntermediateOutputPath>$(BaseArtifactsPath)obj/$(BaseArtifactsPathSuffix)</BaseIntermediateOutputPath>
+        <BaseOutputPath>$(BaseArtifactsPath)bin/$(BaseArtifactsPathSuffix)</BaseOutputPath>
+        <PackageOutputPath>$(BaseArtifactsPath)pkg/$(BaseArtifactsPathSuffix)/$(Configuration)/</PackageOutputPath>
+    </PropertyGroup>
+
+    <!-- Setup Code Analysis using the .editorconfig file -->
+    <PropertyGroup>
+        <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+        <AnalysisMode>AllEnabledByDefault</AnalysisMode>
+        <AnalysisLevel>latest</AnalysisLevel>
+        <RunAnalyzersDuringBuild>true</RunAnalyzersDuringBuild>
+        <RunAnalyzersDuringLiveAnalysis>true</RunAnalyzersDuringLiveAnalysis>
+        <CodeAnalysisTreatWarningsAsErrors>false</CodeAnalysisTreatWarningsAsErrors>
+        <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+        <WarningsAsErrors>nullable</WarningsAsErrors>
+    </PropertyGroup>
+
+</Project>
